@@ -34,7 +34,12 @@ def game():
     print(letras_descobertas)
     
     # Número de chances
-    chances = 6
+    chances = len(palavra)
+    
+    # v1 = 'banana'
+    # palavra = len(v1)    # 
+    # print(palavra)
+
     
     # Lista para as letras erradas
     letras_erradas = []
@@ -65,7 +70,12 @@ def game():
         if "_" not in letras_descobertas:
             print("\nVocê venceu, a palavra era:", palavra)
             break
-        
-        
     
-game()
+    # Condicional
+    if "_" in letras_descobertas:
+        print("\nVocê perdeu, a palavra era: ", palavra)
+        
+
+if __name__ == "__main__":
+    game()
+    print("\nParabéns. Você está aprendendo Python!")
