@@ -1,7 +1,7 @@
 # Importando bibliotecas
 import random
 from os import system, name
-
+from body_stages import stages
 
 # Função para limpar a tela a cada execução
 def limpa_tela():
@@ -13,6 +13,11 @@ def limpa_tela():
     else:
         _ = system('clear')
 
+
+def display_hangman(chances):
+    
+    return stages[chances]    
+    
 
 # Função game
 def game():
@@ -33,14 +38,10 @@ def game():
     
     print(letras_descobertas)
     
-    # Número de chances
-    chances = len(palavra)
-    
-    # v1 = 'banana'
-    # palavra = len(v1)    # 
-    # print(palavra)
-
-    
+    # Passando para a variável chances o valor do comprimenta da variável palavra
+    chances = 6
+    tabuleiro = len(palavra)
+        
     # Lista para as letras erradas
     letras_erradas = []
     
@@ -48,8 +49,11 @@ def game():
     while chances > 0:
         
         #Print
-        print(" ".join(letras_descobertas))
+        # print(" ".join(letras_descobertas))
+        print(display_hangman(chances))
+        print("Palavra: ", tabuleiro)
         print("\nChances restantes: ", chances)
+        
         print("Letras erradas:", "".join(letras_erradas))
         
         #Tentativa
