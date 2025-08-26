@@ -18,7 +18,6 @@ if qtd_arquivos == 0:
 
 # Criando estrutura do arquivo excel
 
-
 wb = Workbook()
 ws = wb.active
 ws.title = 'Importacao de Nfs'
@@ -39,10 +38,10 @@ for arquivo in arquivos:
         primeira_pagina = pdf.pages[0]
         texto_pdf = primeira_pagina.extract_text()
         # Debug
-        # print(texto_pdf)
+        print(texto_pdf)
         
         # Regex para pegar apenas o conteúdo desejado
-    numero_nota_padra = r'INVOICE #(\d+)'
+    numero_nota_padra = r'INVOICE #(\d3)'
     numero_data_padra = r'DATE (\d{2}/\d{2/\d{4}})'
     
     match_number = re.search(numero_data_padra, texto_pdf)
@@ -75,7 +74,7 @@ data_real = data_atual[:indice_ponto]
     
     
         
-        
+# Salvando excel        
 wb.save(f"Notas - {data_real}.xlsx")
 
 
