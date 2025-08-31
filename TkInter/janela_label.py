@@ -13,7 +13,6 @@ cor = '#242323'
 janela.config(background=cor)
 
 # Alterando o icone
-
 janela.iconphoto(False, PhotoImage(file='logo.png'))
 
 # Bloqueando redimensionamente
