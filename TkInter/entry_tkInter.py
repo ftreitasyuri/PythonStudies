@@ -16,6 +16,10 @@ def obter_dados():
     idade_resp['text'] = idade
     pais_resp['text'] = pais
     
+    entry_nome.delete(0,END)
+    entry_idade.delete(0,END)
+    entry_pais.delete(0,END)
+    
 def limpar_dados():
     nome_resp['text'] = ''
     idade_resp['text'] = ''
@@ -51,7 +55,7 @@ label_pais = Label(janela, width=10, height=2, text='País', fg='#fff', bg=cor, 
 label_pais.place(x=10, y=100)
 
 # Entry
-entry_pais = Entry(janela, width=10, font=('Arial 20'))
+entry_pais = Entry(janela, width=10, font=('Arial 20'), state='disabled')
 entry_pais.place(x=100, y=100)
 
 # Botão
