@@ -34,6 +34,28 @@ nome_app = ctk.CTkLabel(quadro_superior, height=70,
 # nome_app.grid(row=0, column=0, padx=10, pady=10)
 nome_app.place(x=60, y=15)
 
+# Função para calular IMG
+
+def calcular():
+    #degub
+    # print('Funcionou')
+    
+    peso = float(e_peso.get())
+    altura = float(e_altura.get())
+    
+    resultado = peso / (altura ** 2)
+    
+    if resultado < 16.6:
+        l_descricao.configure(text='Seu IMC é : Abaixo do peso')
+    elif resultado >= 18.5 and resultado < 24.9:
+        l_descricao.configure(text='Seu IMC é: Normal')
+    elif resultado >= 25 and resultado < 29.9:
+        l_descricao.configure(text='Seu IMC é: Sobrepeso')
+    else:
+        l_descricao.configure(text='Seu IMC é: Obesidade')
+        
+    l_resultado.configure(text='{:.{}f}'.format(resultado,2))
+
 # Configurar o quadro inferior
 l_peso = ctk.CTkLabel(quadro_inferior, text='Digite seu peso (Kg)',
                       text_color=cores[0],
@@ -78,7 +100,7 @@ l_resultado.grid(row=2, column=1, columnspan=2, sticky='nw', padx=15, pady=30)
 
 
 # Resultado descrição
-l_descricao = ctk.CTkLabel(quadro_inferior, text='Seu IMC é: ',
+l_descricao = ctk.CTkLabel(quadro_inferior, text='',
                             text_color=cores[0],
                             font=('Helvetica', 15),
                             # anchor='center',
@@ -96,7 +118,8 @@ b_calcular = ctk.CTkButton(quadro_inferior,
                            font=('Helvetica', 16, 'bold'),
                            fg_color=cores[2],
                            hover_color=cores[4],
-                           corner_radius=12
+                           corner_radius=12,
+                           command=calcular
                            )
 b_calcular.grid(row=4, column=0, columnspan=2, padx=15, pady=25)
 
