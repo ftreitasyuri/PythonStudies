@@ -1,3 +1,6 @@
+# Após criar ou selecionar o venv, ative o venv e rode 
+# pip install -r requirements.txt
+
 # Comando para instalar o snowflake-sqlalchemy e dotenv
 # ---pip install snowflake-sqlalchemy python-dotenv pandas openpyxl
 
