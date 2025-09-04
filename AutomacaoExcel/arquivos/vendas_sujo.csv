@@ -1,0 +1,51 @@
+Produto;Categoria;Preço;Quantidade;Cliente;DataVenda;FormaPagamento
+HD Externo;Informática;4837.52;;;2025-02-10;pix
+Mouse;Eletrônicos;erro;5.0;João;;cartao
+Webcam;Informática;2835.95;5.0;Maria;2025-02-10;
+Notebook;Informática;799.94;3.0;Ana;2025-02-10;Cartão
+Webcam;Móveis;3747.82;;Beatriz;2025-05-20;Boleto
+Cadeira Gamer;Móveis;4573.38;1.0;Ana;2025-01-05;Boleto
+Fone de Ouvido;Eletrônicos;3325.49;3.0;Beatriz;2025-05-20;cartao
+HD Externo;Acessórios;3291.28;3.0;José;2025-05-20;cartao
+Tablet;Móveis;3556.69;;Maria;2025-01-05;PIX
+Notebook;Informática;3045.32;;Carlos;15-04-2025;PIX
+Smartphone;Eletrônicos;4223.95;;Carlos;;cartao
+HD Externo;Móveis;3671.4;;Ana;;pix
+Monitor;Eletrônicos;4534.24;2.0;João;2025-05-20;
+Webcam;Eletrônicos;3279.89;5.0;;;Cartão
+Smartphone;Informática;3255.04;1.0;Ana;2025-01-05;pix
+HD Externo;Móveis;2297.77;1.0;João;2025-05-20;
+Webcam;Eletrônicos;3460.17;3.0;Beatriz;2025-05-20;PIX
+Webcam;Móveis;1555.06;3.0;José;15-04-2025;cartao
+Mouse;Acessórios;106.52;2.0;José;2025-05-20;pix
+Fone de Ouvido;Informática;3586.32;1.0;Ana;2025-02-10;Boleto
+Fone de Ouvido;Informática;4912.97;2.0;João;;PIX
+Fone de Ouvido;Móveis;2902.72;3.0;João;;pix
+Webcam;Informática;1289.95;1.0;Maria;2025-01-05;cartao
+Webcam;Informática;4218.34;;Carlos;2025/03/15;Boleto
+Webcam;Informática;1513.1;;Maria;2025/03/15;pix
+Notebook;Eletrônicos;2748.43;2.0;Ana;2025-01-05;
+Notebook;Eletrônicos;1699.22;;Maria;2025/03/15;cartao
+Webcam;Eletrônicos;2979.1;;Carlos;2025-05-20;
+HD Externo;Informática;4476.03;;Carlos;15-04-2025;
+Monitor;Eletrônicos;781.92;;Beatriz;2025/03/15;Cartão
+Mouse;Eletrônicos;2590.96;3.0;João;2025/03/15;
+Webcam;Eletrônicos;2070.64;5.0;Maria;2025-05-20;
+Mouse;Eletrônicos;;2.0;Maria;2025/03/15;PIX
+Teclado;Eletrônicos;276.75;5.0;Maria;;cartao
+Cadeira Gamer;Informática;2361.09;;;2025-02-10;pix
+Monitor;Informática;3141.95;;Carlos;2025-02-10;PIX
+Teclado;Eletrônicos;4250.86;1.0;Maria;2025/03/15;Boleto
+Notebook;Informática;1898.91;;Maria;2025/03/15;cartao
+Notebook;Acessórios;953.96;2.0;;2025-02-10;pix
+Tablet;Acessórios;4891.29;3.0;José;2025-02-10;
+Smartphone;Eletrônicos;1144.29;2.0;José;;
+Notebook;Eletrônicos;2156.31;;;2025/03/15;
+Notebook;Móveis;1221.4;3.0;Maria;2025/03/15;pix
+Tablet;Acessórios;442.69;3.0;Maria;;cartao
+Teclado;Móveis;4196.59;5.0;José;2025-01-05;Cartão
+Teclado;Acessórios;4361.54;1.0;José;;
+Mouse;Informática;3735.61;2.0;João;15-04-2025;cartao
+Fone de Ouvido;Móveis;1363.99;3.0;João;2025-01-05;PIX
+Tablet;Informática;801.14;1.0;José;2025/03/15;Cartão
+Webcam;Eletrônicos;2789.77;2.0;Beatriz;15-04-2025;pix
