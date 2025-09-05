@@ -4,32 +4,37 @@ import re
 
 def converte_texto(opc, texto):
     
+    global texto_convertido
     # Valida opção        
-        if opc == 1:
-            try:
-                if texto is not None and type(texto) == str: 
-                    print("Texto válido!")
-                    # converte o texto para UPPERCASE
-                    txtUpper = texto.upper()
-                    print(f"O texto convertido é: {txtUpper}")
-                else:
-                    print("Texto Inválido!")
-            except Exception as e:
-                print(f"Não foi possível analisar o texto: {e}")
-        elif opc == 0:
-            try:
-                if texto is not None and type(texto) == str: 
-                    print("Texto válido!")
-                    # converte o texto para UPPERCASE
-                    txtUpper = texto.lower()
-                    print(f"O texto convertido é: {txtUpper}")               
+    if opc == 1:
+        try:
+            if texto is not None and type(texto) == str: 
+                # print("Texto válido!")
+                # converte o texto para UPPERCASE
+                texto_convertido = texto.upper()
+                # print(f"O texto convertido é: {txtUpper}")
                 
-                else:
-                    print("Texto Inválido!")
-            except Exception as e:
-                print(f"Não foi possível analisar o texto: {e}")    
-        else:
-            print("Valor inválido")
+            else:
+                print("Texto Inválido!")
+        except Exception as e:
+            print(f"Não foi possível analisar o texto: {e}")
+    elif opc == 0:
+        try:
+            if texto is not None and type(texto) == str: 
+                print("Texto válido!")
+                # converte o texto para UPPERCASE
+                texto_convertido = texto.lower()
+                # print(f"O texto convertido é: {txtUpper}")               
+            
+            else:
+                print("Texto Inválido!")
+        except Exception as e:
+            print(f"Não foi possível analisar o texto: {e}")    
+    else:
+        print("Valor inválido")
+    
+    
+    return texto_convertido
             
 # continuar = True   
 
